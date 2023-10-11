@@ -1,24 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import Input from "./components/Input";
+import { Container, Content } from "./styles";
+import Core from "./components/Core";
+import { useState } from "react";
 
-function App() {
+
+const App = () => {
+
+  const [currentNumber, setCurrentNumber] = useState(0);
+  const [firstNumber, setFirstNumber] = useState(0);
+  const [operation, setOperation] = useState('');
+  const [inputInProgress, setInputInProgress] = useState(false);
+  const [operationClicked, setOperationClicked] = useState(false);
+  const [decimalEntered, setDecimalEntered] = useState(false);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+      <Content>
+        <Input value={currentNumber}/>
+        <Core 
+        currentNumber={currentNumber}
+        setCurrentNumber={setCurrentNumber}
+        firstNumber={firstNumber}
+        setFirstNumber={setFirstNumber}
+        operation={operation}
+        setOperation={setOperation}
+        inputInProgress={inputInProgress}
+        setInputInProgress={setInputInProgress}
+        operationClicked={operationClicked}
+        setOperationClicked={setOperationClicked}
+        decimalEntered={decimalEntered}
+        setDecimalEntered={setDecimalEntered}
+        />  
+      </Content>
+    </Container>
   );
 }
 
