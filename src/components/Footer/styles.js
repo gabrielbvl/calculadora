@@ -13,7 +13,7 @@ export const FooterContainer = styled.h3`
   border: 1px solid dodgerblue;
   padding: 10px;
   transition: 2s;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 
   h2 {
     margin-bottom: 20px;

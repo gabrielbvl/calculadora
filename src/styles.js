@@ -14,7 +14,7 @@ export const ContainerMaster = styled.div`
   justify-content: center;
   align-items: center;
 
-  overflow: scroll;
+  overflow: auto;
 `;
 
 export const Container = styled.div`
