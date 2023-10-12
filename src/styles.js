@@ -1,8 +1,12 @@
 import styled from "styled-components";
 
+export const GlobalContainer = styled.div`
+  height: 100vh;
+  background-color: #101010;
+`;
+
 export const ContainerMaster = styled.div`
   width: 100%;
-  height: 100vh;
   background-color: #101010;
 
   display: flex;
@@ -10,7 +14,7 @@ export const ContainerMaster = styled.div`
   justify-content: center;
   align-items: center;
 
-  overflow: auto;
+  overflow: scroll;
 `;
 
 export const Container = styled.div`
@@ -47,11 +51,6 @@ export const ContentH1 = styled.div`
   text-align: center;
   color: dodgerblue;
   padding: 20px;
-  margin-top: 40px;
-
-  @media (min-width: 770px) {
-    margin-top: 0px;
-  }
 
   @media (min-width: 990px) {
     font-size: 33px;

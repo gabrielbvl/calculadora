@@ -1,5 +1,11 @@
 import Input from "./components/Input";
-import { Container, ContainerMaster, Content, ContentH1 } from "./styles";
+import {
+  Container,
+  ContainerMaster,
+  Content,
+  ContentH1,
+  GlobalContainer,
+} from "./styles";
 import Core from "./components/Core";
 import { useState } from "react";
 import Historic from "./components/Historic";
@@ -15,34 +21,36 @@ const App = () => {
   const [history, setHistory] = useState([]);
 
   return (
-    <ContainerMaster>
-      <ContentH1>
-        <h1>Faça seus cálculos e seja feliz</h1>
-      </ContentH1>
-      <Container>
-        <Content>
-          <Input value={currentNumber} />
-          <Core
-            currentNumber={currentNumber}
-            setCurrentNumber={setCurrentNumber}
-            firstNumber={firstNumber}
-            setFirstNumber={setFirstNumber}
-            operation={operation}
-            setOperation={setOperation}
-            inputInProgress={inputInProgress}
-            setInputInProgress={setInputInProgress}
-            operationClicked={operationClicked}
-            setOperationClicked={setOperationClicked}
-            decimalEntered={decimalEntered}
-            setDecimalEntered={setDecimalEntered}
-            history={history}
-            setHistory={setHistory}
-          />
-        </Content>
-        <Historic history={history} />
-      </Container>
-      <Footer />
-    </ContainerMaster>
+    <GlobalContainer>
+      <ContainerMaster>
+        <ContentH1>
+          <h1>Faça seus cálculos e seja feliz</h1>
+        </ContentH1>
+        <Container>
+          <Content>
+            <Input value={currentNumber} />
+            <Core
+              currentNumber={currentNumber}
+              setCurrentNumber={setCurrentNumber}
+              firstNumber={firstNumber}
+              setFirstNumber={setFirstNumber}
+              operation={operation}
+              setOperation={setOperation}
+              inputInProgress={inputInProgress}
+              setInputInProgress={setInputInProgress}
+              operationClicked={operationClicked}
+              setOperationClicked={setOperationClicked}
+              decimalEntered={decimalEntered}
+              setDecimalEntered={setDecimalEntered}
+              history={history}
+              setHistory={setHistory}
+            />
+          </Content>
+          <Historic history={history} />
+        </Container>
+        <Footer />
+      </ContainerMaster>
+    </GlobalContainer>
   );
 };
 
