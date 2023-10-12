@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+# Calculadora
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Índice
 
-## Available Scripts
+- [Calculadora](#calculadora)
+  - [Índice](#índice)
+  - [Observações sobre o projeto](#observações-sobre-o-projeto)
+  - [Funcionalidades](#funcionalidades)
+    - [Novas funcionalidades eu colocarei aqui, com a data que foram inseridas.](#novas-funcionalidades-eu-colocarei-aqui-com-a-data-que-foram-inseridas)
+  - [Bugs encontrados até agora](#bugs-encontrados-até-agora)
+  - [Bugs resolvidos até agora](#bugs-resolvidos-até-agora)
+  - [Acesse o projeto](#acesse-o-projeto)
+  - [Dicas para uma boa visualização do projeto](#dicas-para-uma-boa-visualização-do-projeto)
 
-In the project directory, you can run:
+## Observações sobre o projeto
 
-### `npm start`
+Esse projetinho foi proposto pela DIO no bootcamp **Formação React Developer** e eu decidir aprimorar e aproveitar para treinar e melhorar minha logica e meu React, além de utilizar o styled-components que negligenciei durante muito tempo.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+A Calculadora está bem simples, apenas com as operações básicas como _soma, subtração, multiplicação e divisão_.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Não me preocupei com estilização e responsividade agora, pois como me considero muito bom na questão da estilização, decidi focar em relembrar como fazer um bom código em React, como estruturar e componentizar tudo.
 
-### `npm test`
+Estarei melhorando a calculadora com o tempo e a ideia é fazer uma calculadora cientifica completa, mas isso só o tempo poderá mostrar se vai realmente acontecer haha.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Funcionalidades
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Soma, subtração, divisão e multiplicação.
+- Operações com números inteiros e números decimais.
+- Histórico de todas as operações feitas.
+- Botão para limpar a calculadora e botão para limpar tudo, incluindo o histórico.
+- Botão para apagar número por número digitado (backspace).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Novas funcionalidades eu colocarei aqui, com a data que foram inseridas.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## Bugs encontrados até agora
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- A virgula não aparece assim que é colocada, apenas após a seleção de um número.
+- Caso o número posto após a virgula seja 0 (zero), também não aparece, mas ao colocar um número diferente de 0 (zero) tudo aparece como magica.
+- ~~Se o botão da operação for apertado após o botão de = (igual), buga o retorno, ele soma o resultado com o próprio resultado e trava a calculadora.~~
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Bugs resolvidos até agora
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Bug do botão de operação travar a calculadora se apertado após o resultado, foi resolvido apenas travando o botão caso nenhum número tenha sido digitado ainda.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## Acesse o projeto
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Para acessar a aplicação por favor use esse [link](https://calculadora-alpha-six.vercel.app/) e você será redirecionado para a versão mais recente da aplicação.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## Dicas para uma boa visualização do projeto
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- ~~Utilize uma tela de no mínimo 750px de altura, caso esteja testando pelo inspecionar do seu navegador, pois ainda não ajustei 100% os elementos para ficarem responsivos e telas menores acabam cortando o conteúdo de baixo e precisa rolar pra ver, em 750px já fica tudo na tela certinho.~~
+- ~~No celular esquece, você até consegue usar, mas ta horrível, vou ajeitar provavelmente so proxima semana porque preciso dar seguimento ao bootcamp haha.~~
+- Já dei uma melhorada legal na responsividade, creio que estará bem visível em qualquer tela agora.
