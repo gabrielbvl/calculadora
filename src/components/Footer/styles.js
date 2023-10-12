@@ -2,21 +2,26 @@ import styled from "styled-components";
 
 export const FooterContainer = styled.h3`
   color: white;
-  font-size: 24px;
   text-align: center;
-  width: 80%;
-  min-height: 40vh;
+  width: 70%;
+  height: auto;
   max-width: 900px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 1px solid blueviolet;
+  border: 1px solid dodgerblue;
   padding: 10px;
   transition: 2s;
+  margin-bottom: 40px;
 
-  h1 {
+  h2 {
     margin-bottom: 20px;
+    font-size: 3vw;
+
+    @media (min-width: 2000px) {
+      font-size: 60px;
+    }
   }
 
   ul {
@@ -24,16 +29,16 @@ export const FooterContainer = styled.h3`
 
   li {
     margin-bottom: 15px;
-    text-align: left;
-  }
+    text-align: justify;
+    font-weight: 500;
+    font-size: 1.8vw;
 
-  @media (max-width: 1100px) {
-    font-size: 18px;
-    transition: 2s;
-  }
+    @media (min-width: 1400px) {
+      font-size: 25px;
+    }
 
-  @media (max-width: 810px) {
-    font-size: 14px;
-    transition: 2s;
+    a {
+      color: white;
+    }
   }
 `;

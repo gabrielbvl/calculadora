@@ -1,5 +1,5 @@
 import Input from "./components/Input";
-import { Container, ContainerMaster, Content } from "./styles";
+import { Container, ContainerMaster, Content, ContentH1 } from "./styles";
 import Core from "./components/Core";
 import { useState } from "react";
 import Historic from "./components/Historic";
@@ -16,6 +16,9 @@ const App = () => {
 
   return (
     <ContainerMaster>
+      <ContentH1>
+        <h1>Faça seus cálculos e seja feliz</h1>
+      </ContentH1>
       <Container>
         <Content>
           <Input value={currentNumber} />

@@ -1,27 +1,34 @@
 import { FooterContainer } from "./styles";
 
 const Footer = () => {
+  const githubLink = "https://github.com/gabrielbvl";
+  const linkedinLink = "https://www.linkedin.com/in/gabrielbvl";
+  const repositoryLink = "https://github.com/gabrielbvl/calculadora";
+
   return (
     <FooterContainer>
-      <h1>Observações</h1>
+      <h2>Informações Importantes</h2>
       <ul>
-        <li>Todas as operações funcionam corretamente.</li>
         <li>
-          A virgula funciona corretamente, mas só aparece após digitar o próximo
-          número.
+          Sinta-se a vontade para dar sugestões e fazer criticas construtivas
+          sobre o projeto.
         </li>
         <li>
-          Irei implementar novas operações futuramente e corrigir o problema da
-          virgula.
+          Entre em contato via{" "}
+          <a target="blank" href={githubLink}>
+            Github
+          </a>{" "}
+          ou{" "}
+          <a target="blank" href={linkedinLink}>
+            LinkedIn
+          </a>{" "}
+          :D
         </li>
-        <li>Irei implementar um modo claro para o usuário que preferir.</li>
+        <li>Projeto em desenvolvimento por Gabriel Bezerra.</li>
         <li>
-          Estarei sempre atualizando e refatorando no que for necessário ese
-          projeto.
-        </li>
-        <li>
-          Não trabalhei muito na responsividade, mas irei melhorar 100% no
-          futuro.
+          <a target="blank" href={repositoryLink}>
+            Acesse o repositório
+          </a>
         </li>
       </ul>
     </FooterContainer>
