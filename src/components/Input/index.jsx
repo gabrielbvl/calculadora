@@ -1,11 +1,13 @@
-import { InputContainer } from "./styled"
+import { InputContainer } from "./styled";
 
-const Input = ({value}) => {
-    return (
-      <InputContainer>
-        <input disabled value={value}/>
-      </InputContainer>
-    );
-  }
-  
-  export default Input;
+const Input = ({ value }) => {
+  const formattedValue = new Intl.NumberFormat("pt-BR").format(value);
+
+  return (
+    <InputContainer>
+      <input disabled value={formattedValue} />
+    </InputContainer>
+  );
+};
+
+export default Input;
