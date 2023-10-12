@@ -50,7 +50,7 @@ Estarei melhorando a calculadora com o tempo e a ideia é fazer uma calculadora 
 
 ## Acesse o projeto
 
-Para acessar a aplicação por favor use esse [link](https://calculadora-alpha-six.vercel.app/) e você será redirecionado para a versão mais recente da aplicação.
+Para acessar a aplicação por favor use esse [link](https://calculadora-fino7c50m-gabrielbvl.vercel.app/) e você será redirecionado para a versão mais recente da aplicação.
 
 ---
 
