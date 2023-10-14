@@ -15,18 +15,18 @@ const Footer = () => {
         </li>
         <li>
           Entre em contato via{" "}
-          <a target="blank" href={githubLink}>
+          <a href={githubLink} target="blank">
             Github
           </a>{" "}
           ou{" "}
-          <a target="blank" href={linkedinLink}>
+          <a href={linkedinLink} target="blank">
             LinkedIn
           </a>{" "}
           :D
         </li>
         <li>Projeto em desenvolvimento por Gabriel Bezerra.</li>
         <li>
-          <a target="blank" href={repositoryLink}>
+          <a href={repositoryLink} target="blank">
             Acesse o repositório
           </a>
         </li>
