@@ -2,7 +2,11 @@ import styled from "styled-components";
 
 export const GlobalContainer = styled.div`
   height: 100vh;
+  width: 100vw;
   background-color: #101010;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
 export const ContainerMaster = styled.div`
@@ -49,7 +53,7 @@ export const Content = styled.div`
 export const ContentH1 = styled.div`
   font-size: 3.3vw;
   text-align: center;
-  color: dodgerblue;
+  color: #1e90ff;
   padding: 20px;
 
   @media (min-width: 990px) {

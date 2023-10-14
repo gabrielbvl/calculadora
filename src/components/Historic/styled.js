@@ -39,11 +39,11 @@ export const HistoricContent = styled.div`
   display: flex;
   align-items: center;
   padding: 2px;
-  border-bottom: 1px solid dodgerblue;
+  border-bottom: 1px solid #1e90ff;
   width: 98%;
 
   #numberOfOperation {
-    color: dodgerblue;
+    color: #1e90ff;
     font-size: 26px;
     font-weight: 700;
     display: flex;

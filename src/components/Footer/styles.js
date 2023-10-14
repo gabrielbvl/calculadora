@@ -10,7 +10,7 @@ export const FooterContainer = styled.h3`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 1px solid dodgerblue;
+  border: 1px solid #1e90ff;
   padding: 10px;
   transition: 2s;
   margin-bottom: 20px;

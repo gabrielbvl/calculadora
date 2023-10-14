@@ -10,6 +10,7 @@ import Core from "./components/Core";
 import { useState } from "react";
 import Historic from "./components/Historic";
 import Footer from "./components/Footer";
+import Header from "./components/Header";
 
 const App = () => {
   const [currentNumber, setCurrentNumber] = useState(0);
@@ -22,6 +23,7 @@ const App = () => {
 
   return (
     <GlobalContainer>
+      <Header />
       <ContainerMaster>
         <ContentH1>
           <h1>Faça seus cálculos e seja feliz</h1>
