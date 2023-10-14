@@ -56,6 +56,10 @@ export const ContentH1 = styled.div`
   color: #1e90ff;
   padding: 20px;
 
+  @media (max-width: 768px) {
+    margin-top: 100px;
+  }
+
   @media (min-width: 990px) {
     font-size: 33px;
     transition: 1s;

@@ -1,22 +1,52 @@
 import styled from "styled-components";
 
 export const HeaderContainer = styled.h3`
-  color: white;
-  text-align: center;
-  width: 100%;
+  width: 100vw;
+  height: 40px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  background: linear-gradient(to bottom, #0e101c, #0a0c16);
-  transition: 2s;
-  margin-bottom: 20px;
-  margin-bottom: 20px;
   padding: 10px 0 10px 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 162, 255, 1),
+    rgba(0, 76, 120, 1)
+  );
+  margin-bottom: 40px;
 
-  button {
-    width: 40px;
-    height: 20px;
-    color: black;
+  color: rgba(255, 255, 255, 1);
+`;
+
+export const LogoNameLeft = styled.div`
+  // background-color: red;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 15%;
+`;
+
+export const PageNameCenter = styled.div`
+  //  background-color: green;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 60%;
+
+  ul {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
   }
+
+  li {
+    list-style: none;
+  }
+`;
+
+export const SandwichMenuRight = styled.div`
+  // background-color: blue;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 10%;
 `;
